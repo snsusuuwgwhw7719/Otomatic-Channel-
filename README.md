@@ -1,2 +1,16 @@
-# Otomatic-Channel-
-Otomatic
+لا تغير الحقوق ضلعي
+
+### تابع : [محمد](https://t.me/M_B_U) ###
+
+
+
+
+
+
+
+
+
+
+
+
+
