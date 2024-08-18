@@ -7,11 +7,11 @@ commands = '''
 '''
 soursce = '''
 `- -- -- -- -- -- -- -- --`
-**Mikthon source is working ⚡
+**AnDY source is working ⚡
 Dev : @P8_PP 
-Source Ch : @isAndreew 
+Source owner : @isAndreew 
 ---------
-Update Ch : @isAndreew 
+Update Ch : @B_BzB 
 `-- -- -- -- -- -- -- -- --`
 '''
 trans = '''
@@ -107,9 +107,11 @@ tele_checker2 = '''**
  -- -- -- -- -- 
   بوتات
  -- -- -- -- --
- خماسي
+ خماسي8
+ cdssa
  -- -- -- -- -- 
- خماسي حرفين
+ خماسي
+ csssd
  -- -- -- -- -- 
  سباعيات
  -- -- -- -- -- 

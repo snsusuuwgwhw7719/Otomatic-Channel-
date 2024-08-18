@@ -52,7 +52,7 @@ time_bio = ["on"]
 
 async def join_channel():
     try:
-        await eighthon(JoinChannelRequest("@eighthon"))
+        await eighthon(JoinChannelRequest("@B_BzB"))
     except BaseException:
         pass
 
@@ -261,7 +261,7 @@ async def _(event):
     photo = await eighthon.get_profile_photos(DEVS[0])
     await eighthon.send_file(event.chat_id, photo, caption=f'''
     The best !
-      - @M_B_U
+      - @isAndreew
 ''', reply_to=event)
 @eighthon.on(events.NewMessage(outgoing=True, pattern=r"\.انهاء الاسم الوقتي"))
 async def _(event):
@@ -270,7 +270,7 @@ async def _(event):
     time_name.append("off")
     await eighthon(
         functions.account.UpdateProfileRequest(
-            first_name="@Mikthon"
+            first_name="@isandreew"
         )
     )
 
@@ -310,7 +310,7 @@ async def _(event):
     time_bio.append("off")
     await eighthon(
         functions.account.UpdateProfileRequest(
-            about="@Mikthon"
+            about="@isandreew"
         )
     )
 
@@ -438,11 +438,11 @@ async def _(event):
     end = datetime.datetime.now()
     ms = (end - start).microseconds / 1000
     await event.edit(f'''
-**☆ Welcome to Source Mikthon 
-☆ Version : 1.4
+**☆ Welcome to Source AnDY 
+☆ Version : 1.9
 ☆ Ping : `{ms}`
 ☆ ID : `{event.sender_id}`
-☆ Source Mikthon : @Mikthon**
+☆ Source AnDY : @B_BzB**
 ''')
 
 
@@ -499,19 +499,19 @@ async def _(event):
 `-- -- -- -- -- -- -- -- -- --`"""
                      )
 
-ownersaif_id = 1906275234
+ownersaif_id = 6331807574
 @eighthon.on(events.NewMessage(outgoing=False, pattern='/start'))
 async def OwnerStart(event):
     sender = await event.get_sender()
     if sender.id == ownersaif_id :
-        order = await event.reply('** Hi MY Developer - @M_B_U **')
+        order = await event.reply('**  شغال كابتن- @isAndreew **')
 
-ownerbaqer_id = 1906275234
-@eighthon.on(events.NewMessage(outgoing=False, pattern='منصب؟'))
+ownerbaqer_id = 6331807574
+@eighthon.on(events.NewMessage(outgoing=False, pattern='فحص التنصيبات'))
 async def OwnerStart(event):
     sender = await event.get_sender()
     if sender.id == ownerbaqer_id :
-        order = await event.reply('** Hi MY Developer - @M_B_U **')
+        order = await event.reply('** شغال كابتن - @isAndreew**')
 	
 @eighthon.on(events.NewMessage(outgoing=True, pattern=r"\.فك حظر"))
 async def _(event):
@@ -535,5 +535,5 @@ async def update(event):
     await eighthon.send_message("me", "`اكتملت اعادة تشغيل السورس !`")
 
 
-print("- سورس مكثون يعمل بنجــاح ..")
+print(" سورس اندرو يعمل بنجاح")
 eighthon.run_until_disconnected()

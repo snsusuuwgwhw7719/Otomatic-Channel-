@@ -79,18 +79,19 @@ def gen_user(choice):
         username = "".join(f)
         username = username + "bot"
 
-    elif choice == "خماسي حرفين":
+    elif choice == "خماسي":
         c = random.choices(a)
         d = random.choices(e)
-
-        f = [c[0], d[0], c[0], c[0], d[0]]
+        s = random.choices(e) 
+        f = [c[0], s[0], s[0], s[0], d[0]]
         random.shuffle(f)
         username = "".join(f)
 
-    elif choice == "خماسي":
-        c = d = random.choices(a)
-        d = random.choices(b)
-        f = [c[0], c[0], c[0], c[0], d[0]]
+    elif choice == "خماسي8":
+        c = random.choices(a)
+        d = random.choices(e)
+        s = random.choices(e)
+        f = [c[0], d[0], s[0], s[0], s[0]]
         random.shuffle(f)
         username = "".join(f)
 
@@ -126,8 +127,10 @@ async def _(event):
   بوتات
  -- -- -- -- --
  خماسي
+ CSSSD
  -- -- -- -- -- 
- خماسي حرفين
+ خماسي8
+ CDSSS
  -- -- -- -- -- 
  سباعيات
  -- -- -- -- -- 
@@ -170,7 +173,7 @@ async def hunterusername(event):
             ch = await eighthon(
                 functions.channels.CreateChannelRequest(
                     title="صيد اندرو",
-                    about="This channel to hunt username by - @isAndreew ",
+                    about="تم الصيد كابتن @B_BzB ",
                 )
             )
             ch = ch.updates[1].channel_id
