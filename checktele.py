@@ -58,19 +58,19 @@ def gen_user(choice):
         random.shuffle(f)
         username = "".join(f)
 
-    elif choice == "ثلاثي":
-        c = random.choices(a)
-        d = random.choices(e)
-        s = random.choices(e)
-        f = [c[0], "_", d[0], "_", s[0]]
-        username = "".join(f)
-        
-    elif choice == "سداسيات":
-        c = d = random.choices(a)
-        d = random.choices(e)
-        f = [c[0], c[0], c[0], c[0], c[0], d[0]]
+    elif choice == "سداسيx":
+  c = d = random.choices(a)
+        d = random.choices(a)
+        f = [c[0], d[0], "_", d[0], d[0], d[0]]
         random.shuffle(f)
-        username = "".join(f)
+        username = ''.join(f)
+        
+    elif choice == "سباعيات":
+        c = d = random.choices(e)
+        d = random.choices(e)
+        f = [c[0], d[0], c[0], d[0], d[0], d[0], d[0]]
+        random.shuffle(f)
+        username = ''.join(f)
         
     elif choice == "بوتات":
         c = random.choices(a)
@@ -95,12 +95,12 @@ def gen_user(choice):
         f = [c[0], d[0], s[0], s[0], s[0]]
         username = "".join(f)
 
-    elif choice == "سباعيات":
-        c = d = random.choices(a)
-        d = random.choices(b)
-        f = [c[0], c[0], c[0], c[0], d[0], c[0], c[0]]
+    elif choice == "ثمانيات":
+        c = d = random.choices(e)
+        d = random.choices(e)
+        f = [c[0], d[0], d[0], d[0], d[0], d[0], d[0], d[0]]
         random.shuffle(f)
-        username = "".join(f)
+        username = ''.join(f)
         
     elif choice == "اليديد":
         c = random.choices(a)
@@ -119,12 +119,14 @@ async def _(event):
         '''
 **-- -- -- -- -- -- -- -- --
  الانواع :
- ثلاثي
+ سداسيx
+ Sd_ddd
  -- -- -- -- - 
  سداسي
  rxxrxx
  -- -- -- -- -- -- -- -- -- -- --
-  سداسيات
+  اليديد
+  cceww
  -- -- -- -- -- 
   بوتات
  -- -- -- -- --
@@ -135,6 +137,9 @@ async def _(event):
  CDSSS
  -- -- -- -- -- 
  سباعيات
+ smsmsms
+ ثمانيات
+ sxssssss
  -- -- -- -- -- 
    طريقه الصيد هيه كالتالي
  - .صيد + نوع الصيد تكتب الاسم 
