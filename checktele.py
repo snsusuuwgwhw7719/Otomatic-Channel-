@@ -64,12 +64,14 @@ def gen_user(choice):
         s = random.choices(e)
         f = [c[0], "_", d[0], "_", s[0]]
         username = "".join(f)
+        
     elif choice == "سداسيات":
         c = d = random.choices(a)
         d = random.choices(e)
         f = [c[0], c[0], c[0], c[0], c[0], d[0]]
         random.shuffle(f)
         username = "".join(f)
+        
     elif choice == "بوتات":
         c = random.choices(a)
         d = random.choices(e)
@@ -99,12 +101,13 @@ def gen_user(choice):
         f = [c[0], c[0], c[0], c[0], d[0], c[0], c[0]]
         random.shuffle(f)
         username = "".join(f)
-    elif choice == "تيست":
-        c = d = random.choices(a)
-        d = random.choices(b)
-        f = [c[0], c[0], c[0]]
-        random.shuffle(f)
-        username = "".join(f)
+        
+    elif choice == "اليديد":
+        c = random.choices(a)
+        d = random.choices(e)
+        s = random.choices(a)
+        f = [c[0], c[0], d[0], s[0], s[0]]
+        username = ''.join(f)
     else:
         return "error"
     return username
@@ -171,8 +174,8 @@ async def hunterusername(event):
         try:
             ch = await eighthon(
                 functions.channels.CreateChannelRequest(
-                    title="صيد اندرو",
-                    about="تم الصيد كابتن @B_BzB ",
+                    title="صيد الرحمه",
+                    about=" تم الصيد من قبل شركة صيد الرحمه ",
                 )
             )
             ch = ch.updates[1].channel_id
