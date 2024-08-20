@@ -59,7 +59,7 @@ def gen_user(choice):
         username = "".join(f)
 
     elif choice == "سداسيx":
-  c = d = random.choices(a)
+        c = d = random.choices(a)
         d = random.choices(a)
         f = [c[0], d[0], "_", d[0], d[0], d[0]]
         random.shuffle(f)
